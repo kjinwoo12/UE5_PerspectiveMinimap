@@ -5,6 +5,7 @@
 `Content/Maps/PerspectiveMinimapTest.umap`
 
 # How to use
+## Default Settings
 ### 1. Add this plugin on your project
 ![img](./ReadMeAssets/HowTo_01.png)
 
@@ -40,3 +41,14 @@ If you have 2 or more capture cameras, You must create new material instances as
 ![img](./ReadMeAssets/HowTo_06.png)
 
 You can find options on your Material Instance.
+
+## Map Icon
+### 1. Add `BP_MapIconComponent` on your actor
+The component will add `BP_MapIcon` actor. The `MaterialBillboardComponent` in the `BP_MapIcon` has
+the `visible in Scene Capture Only` option `true`. That is why you can see the Map Icon on your character's camera.
+
+### 2. Set Texture for owner
+![img](./ReadMeAssets/HowTo_07.png)
+
+Set your Icon. `Player Material` will be show when your actor is owned by your client.
+`Others Material` is for when it is not owned by your client.
